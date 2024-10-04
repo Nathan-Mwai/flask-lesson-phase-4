@@ -37,5 +37,8 @@ def posts():
     posts = [post.to_dict() for post in Post.query.all()]
     return make_response(posts, 200)
 
+# Building APIs
+
+
 if __name__ == '__main__':
     app.run(port=5500, debug=True)
